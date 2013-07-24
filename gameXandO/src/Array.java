@@ -141,16 +141,13 @@ public class Array {
     private void setRandValue(){
 
        if (randomGo && freeCells%2 == 0){
-            System.out.println("free cells " + freeCells);
-            int temp = freeCells;
+           System.out.println("free cells " + freeCells);
+           int temp = freeCells;
+           Random rand = new Random();
 
-            while (temp==freeCells){
-
-            Random rand = new Random();
+           while (temp==freeCells){
             int x = rand.nextInt(FIELD_SIZE - 1) + 1;
             int y = rand.nextInt(FIELD_SIZE - 1) + 1;
-            System.out.println("x " + x);
-            System.out.println("y " + y);
 
                 if (field[x][y] != 'X' && field[x][y] != 'O'){
                     setFieldValue(x,y,'O');
