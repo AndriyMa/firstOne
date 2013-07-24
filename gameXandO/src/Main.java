@@ -4,8 +4,6 @@ public class Main {
 
         Array a = new Array();
         a.startGame();
-
-        char b = ' ';
     }
 
 }
